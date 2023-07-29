@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="parallax.css" />
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/6808/6808239.png">
+    <title>Parallel Universe</title>
+</head>
+
+<style>
+    /* PARALLAX.CSS */
+    /*CSS created by Christopher Jay De Claro*/
+    /*github.com/cjdeclaro*/
+
+    /*Key Art default settings*/
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .keyart,
+    .keyart_layer {
+        height: 1000px;
+    }
+
+    .keyart {
+        position: relative;
+        z-index: 10;
+    }
+
+    .keyart_layer {
+        background-position: bottom center;
+        background-size: auto 1038px;
+        background-repeat: repeat-x;
+        width: 100%;
+        position: absolute;
+    }
+
+    .keyart_layer.parallax {
+        position: fixed;
+    }
+
+    .main-content {
+        width: 100%;
+        position: absolute;
+        z-index: 200;
+    }
+
+    .container {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1%;
+    }
+
+    .pic_cont {
+        margin-top: 3%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        transition: 0.5s ease transform;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+
+    h2 {
+        margin-top: 2%;
+        text-align: center;
+        color: rgb(238, 168, 17);
+    }
+
+    p {
+        margin: 8%;
+        margin-top: 3%;
+        margin-bottom: 2%;
+        text-align: center;
+        color: rgb(94, 30, 117);
+        font-size: 1.7em;
+        font-style: italic;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    h1 {
+        margin: 3%;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .video {
+        margin-top: 2%;
+        display: flex;
+        justify-content: center;
+    }
+
+    h3 {
+        margin-bottom: 2%;
+        text-align: center;
+        color: rgb(94, 30, 117);
+        font-size: 1em;
+        font-style: italic;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #640f86;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #fcb00d;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #640f86;
+    }
+
+    /*ADD OR REMOVE LAYERS AS NEEDED*/
+
+    #keyart-0 {
+        background-image: url(https://raw.githubusercontent.com/Grazziee/E2_Midterms_Parallax/main/parallax0.png);
+    }
+
+    #keyart-1 {
+        background-image: url(https://raw.githubusercontent.com/Grazziee/E2_Midterms_Parallax/main/parallax1.png);
+    }
+
+    #keyart-2 {
+        background-image: url(https://raw.githubusercontent.com/Grazziee/E2_Midterms_Parallax/main/parallax2.png);
+    }
+
+    #keyart-3 {
+        background-image: url(https://raw.githubusercontent.com/Grazziee/E2_Midterms_Parallax/main/parallax3.png);
+    }
+
+    #keyart-4 {
+        background-image: url(https://raw.githubusercontent.com/Grazziee/E2_Midterms_Parallax/main/parallax4.png);
+    }
+
+    #keyart-5 {
+        background-image: url(https://raw.githubusercontent.com/Grazziee/E2_Midterms_Parallax/main/parallax5.png);
+    }
+
+    #keyart-6 {
+        background-image: url(https://raw.githubusercontent.com/Grazziee/E2_Midterms_Parallax/main/parallax6.png);
+    }
+
+    #keyart-7 {
+        background-image: url(https://raw.githubusercontent.com/Grazziee/E2_Midterms_Parallax/main/parallax7.png);
+    }
+
+    #keyart-scrim {
+        opacity: 0;
+    }
+</style>
+
+<body>
+    <section>
+        <div class="keyart" id="parallax">
+            <div class="keyart_layer parallax" id="keyart-0" data-speed="-5"></div>
+            <div class="keyart_layer parallax" id="keyart-1" data-speed="0"></div>
+            <div class="keyart_layer parallax" id="keyart-2" data-speed="-15"></div>
+            <div class="keyart_layer parallax" id="keyart-3" data-speed="3"></div>
+            <div class="keyart_layer parallax" id="keyart-4" data-speed="35"></div>
+            <div class="keyart_layer parallax" id="keyart-5" data-speed="20"></div>
+            <div class="keyart_layer parallax" id="keyart-6" data-speed="90"></div>
+            <div class="keyart_layer parallax" id="keyart-7" data-speed="76"></div>
+            <!--Front image, in sync with scroll, no need to parallax-->
+            <!--Add or Remove layers as needed - check Parallax.css for refrence-->
+        </div>
+    </section>
+
+    <section class="main-content">
+        <div style="height: 2720px; background-color:rgb(255, 234, 203)">
+            <div class="container">
+                <h2>✦ ✦ ✦ </h2>
+                <div class="pic_cont">
+                    <img src="https://raw.githubusercontent.com/Grazziee/E2_Midterms_Parallax/main/1.png"
+                        width="1080px">
+                    <h2>✦ ✦ ✦ </h2>
+                </div>
+                <div class="pic_cont">
+                    <img src="https://raw.githubusercontent.com/Grazziee/E2_Midterms_Parallax/main/2.png"
+                        width="1080px">
+                    <h2>✦ ✦ ✦ </h2>
+                </div>
+                <div class="pic_cont">
+                    <img src="https://raw.githubusercontent.com/Grazziee/E2_Midterms_Parallax/main/3.png"
+                        width="1080px">
+                    <h2>✦ ✦ ✦ </h2>
+                </div>
+                <div class="pic_cont">
+                    <img src="https://raw.githubusercontent.com/Grazziee/E2_Midterms_Parallax/main/4.png"
+                        width="1080px">
+                    <h2>✦ ✦ ✦ </h2>
+                </div>
+            </div>
+            <p>"As long as you identify with the universe - which is perfect and can correct material conditions to
+                bring them back into alignment with that Divine perfection - as long as that is where your mind is
+                aligned, it's as though there were two parallel universes.
+                You decide with every thought you think which one you're going to inhabit.
+                Two parallel universes of experience, as it were."</p>
+            <h1> — Marianne Williamson</h1>
+            <h2>✦ ✦ ✦ </h2>
+            <div class="video">
+                <iframe width="400" height="300" src="https://www.youtube.com/embed/ERH-cMCuW3I?start=50&autoplay=1"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <h3>✦ Now Playing for Music Experience ✦</h3>
+            <h2>✦ ✦ ✦ </h2>
+        </div>
+    </section>
+
+    <!--Uses JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script>
+        function castParallax() {
+
+            var opThresh = 350;
+            var opFactor = 750;
+
+            window.addEventListener("scroll", function (event) {
+                var top = this.pageYOffset;
+
+                var layers = document.getElementsByClassName("parallax");
+                var layer, speed, yPos;
+                for (var i = 0; i < layers.length; i++) {
+                    layer = layers[i];
+                    speed = layer.getAttribute('data-speed');
+                    if (i == 2) {
+                        var yPos = top * speed / 100;
+                    } else {
+                        var yPos = -(top * speed / 100);
+                    }
+                    layer.setAttribute('style', 'transform: translate3d(0px, ' + yPos + 'px, 0px)');
+                }
+            });
+        }
+
+        function dispelParallax() {
+            $("#nonparallax").css('display', 'block');
+            $("#parallax").css('display', 'none');
+        }
+
+        function castSmoothScroll() {
+            $.srSmoothscroll({
+                step: 80,
+                speed: 300,
+                ease: 'linear'
+            });
+        }
+
+        function startSite() {
+            var platform = navigator.platform.toLowerCase();
+            var userAgent = navigator.userAgent.toLowerCase();
+
+            if (platform.indexOf('ipad') != -1 || platform.indexOf('iphone') != -1) {
+                dispelParallax();
+            } else if (platform.indexOf('win32') != -1 || platform.indexOf('linux') != -1) {
+                castParallax();
+                if ($.browser.webkit) {
+                    castSmoothScroll();
+                }
+            } else {
+                castParallax();
+            }
+        }
+
+        document.body.onload = startSite();
+
+    </script>
+
+
+</body>
+
+</html>
